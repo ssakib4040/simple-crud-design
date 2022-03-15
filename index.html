@@ -16,52 +16,56 @@
   </head>
   <body>
     <div class="container">
-      <h2 class="text-center">A simple laravel CRUD</h2>
-      <div class="float-end">
-        <button
-          class="btn btn-success"
-          onclick="addTodo()"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
-        >
-          Add Item
-        </button>
-      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="text-center">A simple laravel CRUD</h2>
+          <div class="float-end">
+            <button
+              class="btn btn-success"
+              onclick="addTodo()"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Add Item
+            </button>
+          </div>
 
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Timestamp</th>
-            <th scope="col">Name</th>
-            <th scope="col">Detail</th>
-            <th scope="col">Edit</th>
-            <th scope="col">Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>123456</td>
-            <td>Homework</td>
-            <td>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
-              quae dolores beatae rerum excepturi! Ratione deserunt doloremque
-              nisi dolor quas?
-            </td>
-            <td>
-              <button class="btn btn-sm btn-primary" onclick="editTodo(1)">
-                Edit
-              </button>
-            </td>
-            <td>
-              <button class="btn btn-sm btn-danger" onclick="deleteTodo(1)">
-                Delete
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Timestamp</th>
+                <th scope="col">Name</th>
+                <th scope="col">Detail</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>123456</td>
+                <td>Homework</td>
+                <td>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse
+                  quae dolores beatae rerum excepturi! Ratione deserunt
+                  doloremque nisi dolor quas?
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-primary" onclick="editTodo(1)">
+                    Edit
+                  </button>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-danger" onclick="deleteTodo(1)">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <!-- Add Modal -->
